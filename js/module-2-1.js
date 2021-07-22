@@ -131,7 +131,7 @@ const arrayFromString4 = myString.split('S')
 console.log(arrayFromString4)
 //сплит строку разбивает на массив элементов, примеры выше
 
-//joint - делает массив в строку
+//join - делает массив в строку
 const myArray = ['I','love','javascript' ]
 console.log(myArray.length)
 
