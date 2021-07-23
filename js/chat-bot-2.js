@@ -168,19 +168,80 @@
 //     // Change code above this line
 //   }
   //лтбо так
-let findLongestWord ="The quick brown fox jumped over the lazy dog"
+// let findLongestWord ="The quick brown fox jumped over the lazy dog"
 
-let longestWordSplit=findLongestWord.split(' ');
-let longestWord = 0;
-let wordLength = 0;
-for (let i = 0; i <= longestWordSplit.length; i += 1) {
-    wordLength = longestWordSplit[1].length;
+// let longestWordSplit=findLongestWord.split(' ');
+// let longestWord = 0;
+// let wordLength = 0;
+// for (let i = 0; i <= longestWordSplit.length; i += 1) {
+//     wordLength = longestWordSplit[1].length;
 
-    if (longestWordSplit[i].length > wordLength) {
-      longestWord = longestWordSplit[i];
-    }
-console.log(longestWord)
-  }
+//     if (longestWordSplit[i].length > wordLength) {
+//       longestWord = longestWordSplit[i];
+//     }
+// console.log(longestWord)
+//   }
+//  const numbers = [1,2,3,4,5];
+//   let max = numbers.length-1
+//   let min = numbers[0]
+// console.log(numbers)
+// function createArrayOfNumbers(min, max) {
+//    // Change code below this line
+//   for (let i=0; i<=max; i+=1){
+    
+//     numbers = min.push(max)
 
+//   // Change code above this line
+//  console.log(numbers)
+// }
+// }
 
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//  let newArray=[]
+// for(const number of numbers){
+//  if (number>value){
+//    newArray.push(number)  
+// }}
+// return newArray
+//  // Change code above this line
+//    }
+// let array1 = [1,2,3,4,5]
+// let array2 = [6,7,8,5,1]
+// let newArray = []
 
+// function getCommonElements(array1, array2) {
+
+//   // Change code below this line
+// let inclElemArr = []
+// let newArray = []
+// if(array1.includes(inclElemArr) && array2.includes(inclElemArr)){
+//    newArray=array1.push(array2)
+//    }
+//     return newArray
+//     }
+//     getCommonElements ([1,2,3,4,5],[9,8,7,6])
+//     console.log()
+//  // Change code above this line
+
+//ищем четные числа 
+function getEvenNumbers(start, end) {
+  // Change code below this line
+const evenNumbers = []; 
+for (let i=start; i<=end; i+=1){
+ if (i%2===0){
+   evenNumbers.push(i)}
+   // Change code above this line
+ }
+ return evenNumbers}
+
+ //проверяем наличие через функцию без инклуда
+ function includes(array, value) {
+  // Change code below this line
+ 
+for (let i=0; i<array.length; i+=1){
+  if (array[i]===value){
+    return true}}
+  return false
+  // Change code above this line
+}

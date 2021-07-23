@@ -143,12 +143,86 @@
 // console.log('smallestNumber', smallestNumber);
 
 //ЗАДАЧА 5
-const friends = ['mango', 'poly', 'kiwi', 'ajax']
-let string = ''
+// const friends = ['mango', 'poly', 'kiwi', 'ajax']
+// let string = ''
 
-for (const friend of friends){
-    string+=friend
-}
-console.log(string)
+// for (const friend of friends){
+//     string+=friend+','//конкатенация плюсуем каждое следующее значение
+// }
+// string = string.slice(0,string.length-1)//pop не используем так как это уже не массив
+// console.log(string)
+//метод два (проще, круче)
+// const friends = ['mango', 'poly', 'kiwi', 'ajax']
+// const string = friends.join ('---')
+// console.log(string)
 
 
+//ЗАЛАЧА6
+// const string = 'JavaScript'
+// const letters = string.split('')
+// let invertedString = '';
+
+// for(const letter of letters){
+// console.log(letters)
+// if (letter === letter.toLowerCase()){
+//     console.log('this is letter in lower case', letter)
+//     invertedString +=letter.toUpperCase();
+// }
+// else {
+//     console.log('this letter is in upper case', letter)
+//     invertedString += letter.toLowerCase()
+
+// }}
+// console.log('invertedString', invertedString)
+//метод 2 (круче через тернарник)
+// for(const letter of letters){
+//     console.log(letter)
+// invertedString+=
+// letter===letter.toLowerCase()
+// ?letter.toUpperCase()
+// :letter.toLowerCase()}
+// console.log('invertedString', invertedString)
+
+//ЗАДАЧА7
+//слаг
+// const title = "top 10 benefits of React framework"
+// const normalizedTitle = title.toLowerCase()
+// console.log(normalizedTitle)
+// const words = normalizedTitle.split(' ')
+// console.log(words)
+// const slug = words.join('-')
+// console.log(slug)
+// //можно одной строкой
+// const slug1 = title.toLowerCase().split(' ').join('-')
+// console.log(slug1)
+
+//ЗАДАЧА 8  вычислить сумму двух массивов
+// const array1=[5,10,15,28]
+// const array2=[10,20,38]
+// let total=0;
+// const numbers = array1.concat(array2)
+// console.log(numbers)
+// for (const number of numbers){
+//     total+=number;
+// }
+// console.log (total)
+
+//ЗАДАЧА 9 
+
+const cards = [
+    'Карточка -1',
+    'Карточка -2',
+    'Карточка -3',
+    'Карточка -4',
+    'Карточка -5'
+]
+// const cardToRemove = 'Карточка -3'
+// const index = cards.indexOf(cardToRemove)
+// console.log(index)
+// cards.splice(index,1)
+// console.log(cards)
+// const cardToInsert = 'Карточка 7'
+// const index=3
+// cards.splice(index,0,7,0)//сначала куда вставляем, что удаляем, потом что вставляем через запятую
+
+// console.log(cards)
