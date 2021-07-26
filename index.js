@@ -9,6 +9,7 @@
 // import './js/adddition-lesson-1.js';
 // import './js/repeta-1-2.js';
 // import './js/module-2-1.js';
-import './js/chat-bot-2.js';
+// import './js/chat-bot-2.js';
 // import './js/repeta-2-1.js';
 // import './js/module-2-2.js';
+import './js/repeta-2-2.js';
