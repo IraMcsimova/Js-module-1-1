@@ -16,10 +16,7 @@
 // const r2=add(10,20)
 // console.log(`r2`,r2)
 
-
 //return - возврат!!!
-
-
 
 // const fn = function(){
 //     console.log(1)
@@ -45,8 +42,6 @@
 // }
 // console.log(`result is :`,fn(10));
 // console.log(`result is`, fn(1000))
-
-
 
 //стек вызовов!!!!
 //это пачка листов или книг можно только сверху положить или забрать
@@ -88,7 +83,6 @@
 // }
 // fnA()
 
-
 //TASKS
 // const cart = [54,28,105,78,92,17,120,12,25,90]
 // let total = 0;
@@ -127,7 +121,7 @@
 // const findLogin = function(allLogins, loginToFind){
 //     // console.log(allLogins)//передаем в оллогинс аргумент логинс
 //     // console.log(loginToFind)
-   
+
 // //     for (const login of logins){
 // //         if (login===loginToFind){
 // //        return`User is found`}//кактолько встретит то что надо - выхожу из функции, в отличие от меседж - где функция будет выполняться до конца, даже если нашли логин уже остальные переберутся тоже
@@ -189,7 +183,7 @@
 // console.log(slugify(`technical writing tips for non-native English speackers`))
 
 //TASK - arguments
-//инога нужно написать функцию где нельзя понять сразу сколько будет параметров, 
+//инога нужно написать функцию где нельзя понять сразу сколько будет параметров,
 //может быть по-разному иногда три иногда 7. Для этого используем аргументс - псевдомассив
 //с аргументами не все методы используются но зато число аргументов неважно
 // const fn = function (){
@@ -200,7 +194,6 @@
 // fn(1,2,3)
 // fn(1,2,3,4,5)
 // fn(1,2,3,4,5,6,7)
-
 
 //современный метод приведения псевдомассива к полноценному массиву
 // const fn = function (...args){
@@ -233,20 +226,21 @@
 // console.log(add(1,2,3))
 // console.log(add(1,2,3,4,5,6,7,8,10))
 
-
 //task 2
-const filterNumbers = function (array, ...args){
-console.log(`array:`, array)
-console.log(`args:`, args)
-const uniquesElements = []
-for(const element of array){
-    if (args.includes(element)){
-        console.log(`${element} is in both arrays`)
-    }
-}
-return uniquesElements
-}
+const filterNumbers = function (array, ...args) {
+  console.log(`array:`, array);
+  console.log(`args:`, args);
+  const uniquesElements = [];
 
-console.log(filterNumbers([1,2,3,4,5], 10,15,2,3,8))
-console.log(filterNumbers([10,15,24,30],23,30,18,15))
-console.log(filterNumbers([100,200,300,400,500], 7,12,200,64))
+  for (const element of array) {
+    if (args.includes(element)) {
+      console.log(`${element} is in both arrays`);
+    }
+  }
+
+  return uniquesElements;
+};
+
+console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8));
+console.log(filterNumbers([10, 15, 24, 30], 23, 30, 18, 15));
+console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64));

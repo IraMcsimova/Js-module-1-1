@@ -12,4 +12,6 @@
 // import './js/chat-bot-2.js';
 // import './js/repeta-2-1.js';
 // import './js/module-2-2.js';
-import './js/repeta-2-2.js';
+// import './js/repeta-2-2.js';
+// import "./js/morskoi-boi.js";
+import "./js/repeta-3-1.js";
