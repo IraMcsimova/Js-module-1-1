@@ -250,12 +250,12 @@
 // console.log(getAllNames(friends));
 
 //TASK 3 надо получить всех друзей которые оналйн
-const friends = [
-  { name: `mango`, online: false },
-  { name: `kiwi`, online: true },
-  { name: `poly`, online: true },
-  { name: `ajax`, online: false },
-];
+// const friends = [
+//   { name: `mango`, online: false },
+//   { name: `kiwi`, online: true },
+//   { name: `poly`, online: true },
+//   { name: `ajax`, online: false },
+// ];
 // const getOnlineFriends = function (allFriends) {
 //   const onlineFriends = [];
 //   for (const friend of allFriends) {
@@ -284,18 +284,52 @@ const friends = [
 //   return offlineFriends;
 // };
 // console.log(getOfflineFriends(friends));
+// const friends = [
+//   { name: `mango`, online: false },
+//   { name: `kiwi`, online: true },
+//   { name: `poly`, online: true },
+//   { name: `ajax`, online: false },
+// ];
+// const getFriendsByOnlineStatus = function (allFriends) {
+//   const friendsByStatus = {
+//     online: [],
+//     offline: [],
+//   };
+//   // return friendsByStatus;
+//   for (const friend of allFriends) {
+//     if (friend.online) {
+//       friendsByStatus.online.push(friend);
+//       continue;
+//     }
+//     friendsByStatus.offline.push(friend);
+//   }
+//   return friendsByStatus;
+// };
 
-const getFriendsByOnlineStatus = function (allFriends) {
-  const friendsByStatus = {
-    online: [],
-    offline: [],
-  };
+// console.log(getFriendsByOnlineStatus(friends));
 
-  for (const friend of allFriend) {
-    if (friend.online) {
-      friendsBy;
-    }
-  }
+//task 4 -как узнат количество свойств в обьекте?
+// const x = {
+//   a: 1,
+//   b: 2,
+//   c: 50,
+//   d: 100,
+// };
+// console.log(Object.keys(x).length);
+
+//task 5 - сделать корзину товара
+const cart = {
+  items: [],
+  getItems() {},
+  add(product) {},
+  remove(productName) {},
+  clear() {},
+  countTotalPrice() {},
+  increaseQuantity(productName) {},
+  decreaseQuantity(productName) {},
 };
 
-console.log(getFriendsByOnlineStatus(friends));
+cart.add({ name: `mango`, price: 30 });
+cart.add({ name: `lemon`, price: 60 });
+cart.add({ name: `apple`, price: 70 });
+cart.add({ name: `mango`, price: 30 });
