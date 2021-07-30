@@ -111,23 +111,99 @@
 // }
 // countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 });
 
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const color of colors) {
+//   console.log(color.hex);
+//   console.log(color.rgb);
+
+//   hexColors.push(color.hex);
+//   console.log(hexColors);
+
+//   rgbColors.push(color.rgb);
+//   console.log(rgbColors);
+// }
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     console.log(product.name);
+//     if (product.name === productName) {
+//       return;
+//     }
+//   }
+//   // Change code above this line
+// }
+// getProductPrice("Grip");
+
+//
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     if (productName === product.name) {
+//       return product.price;
+//     }
+//   }
+
+//   return null;
+//   // Change code above this line
+// }
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// const result = [];
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     console.log(product);
+//     if (product.hasOwnProperty(propName)) {
+//       result.push(product[propName]);
+
+//       console.log(result);
+//     }
+//   }
+//   return result;
+
+//   // Change code above this line
+// }
+// getAllPropValues("name");
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
 ];
-
-const hexColors = [];
-const rgbColors = [];
-// Change code below this line
-for (const color of colors) {
-  console.log(color.hex);
-  console.log(color.rgb);
-
-  hexColors.push(color.hex);
-  console.log(hexColors);
-
-  rgbColors.push(color.rgb);
-  console.log(rgbColors);
+function calculateTotalPrice(productName) {
+  let totalPrice = 0;
+  // Пиши код ниже этой строки
+  for (const product of products) {
+    console.log(product.price);
+    if (product.name === productName) {
+      console.log(product.price);
+      totalPrice += product.price * product.quantity;
+      console.log(totalPrice);
+      // return totalPrice;
+      // Пиши код выше этой строки
+    }
+  }
 }
+calculateTotalPrice("Grip");

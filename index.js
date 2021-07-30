@@ -5,7 +5,7 @@
 // import './js/toNumber.js';
 // import './js/toBoolean.js';
 // import './js/falsy-values.js';
-//import './js/module-1-2.js';
+// import './js/module-1-2.js';
 // import './js/adddition-lesson-1.js';
 // import './js/repeta-1-2.js';
 // import './js/module-2-1.js';
@@ -15,6 +15,8 @@
 // import './js/repeta-2-2.js';
 // import "./js/morskoi-boi.js";
 // import "./js/repeta-3-1.js";
+// import "./js/repeta-3-2-objects.js";
 // import "./js/module-3-1-objects.js";
-import "./js/chat-bot-3-functions.js";
+// import "./js/chat-bot-3-functions.js";
 // import "./js/dop-zanjatie-Sandra-objects.js";
+import "./js/module-3-2-objects.js";

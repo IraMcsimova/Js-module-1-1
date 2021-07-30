@@ -82,7 +82,7 @@
 
 // console.log(nextUser);
 
-// //for in - лучше не использовать достает значение родителя если нет у самого
+// //for in - достает значение родителя если нет у самого
 
 // for (let prop in nextUser) {
 //   console.log(`key`, prop);
