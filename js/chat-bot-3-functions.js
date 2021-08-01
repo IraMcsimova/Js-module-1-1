@@ -426,74 +426,91 @@
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //Выполни рефакторинг методов объекта atTheOldToad так,
 //чтобы они работали не с массивом строк, а с массивом объектов.
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(potionName) {
-    if (this.potions.includes(potionName)) {
-      return `Potion ${potionName} is already equipped!`;
-    }
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     if (this.potions.includes(potionName)) {
+//       return `Potion ${potionName} is already equipped!`;
+//     }
 
-    this.potions.push(potionName);
-  },
-  // removePotion(potionName) {
-  //   const potionIndex = this.potions.indexOf(potionName);
+//     this.potions.push(potionName);
+//   },
+// removePotion(potionName) {
+//   const potionIndex = this.potions.indexOf(potionName);
 
-  //   if (potionIndex === -1) {
-  //     return `Potion ${potionName} is not in inventory!`;
-  //   }
+//   if (potionIndex === -1) {
+//     return `Potion ${potionName} is not in inventory!`;
+//   }
 
-  //   this.potions.splice(potionIndex, 1);
-  // },
+//   this.potions.splice(potionIndex, 1);
+// },
 
-  removePotion(potionName) {
-    let potionIndex = 0;
-    const potion = this.potions;
-    for (let i = 0; i < potion.length; i += 1) {
-      if (potion[i].name === potionName) {
-        potionIndex = i;
-      }
-    }
+// removePotion(potionName) {
+//   let potionIndex = 0;
+//   const potion = this.potions;
+//   for (let i = 0; i < potion.length; i += 1) {
+//     if (potion[i].name === potionName) {
+//       potionIndex = i;
+//     }
+//   }
 
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
-    }
+//   if (potionIndex === -1) {
+//     return `Potion ${potionName} is not in inventory!`;
+//   }
 
-    this.potions.splice(potionIndex, 1);
-  },
+//   this.potions.splice(potionIndex, 1);
+// },
 
-  // updatePotionName(oldName, newName) {
-  //   const potionIndex = this.potions.indexOf(oldName);
+// updatePotionName(oldName, newName) {
+//   const potionIndex = this.potions.indexOf(oldName);
 
-  //   if (potionIndex === -1) {
-  //     return `Potion ${oldName} is not in inventory!`;
-  //   }
+//   if (potionIndex === -1) {
+//     return `Potion ${oldName} is not in inventory!`;
+//   }
 
-  //   this.potions.splice(potionIndex, 1, newName);
-  // },
+//   this.potions.splice(potionIndex, 1, newName);
+// },
 
-  updatePotionName(oldName, newName) {
-    let potionIndex = 0;
-    const potion = this.potions;
-    for (let i = 0; i < potion.length; i += 1) {
-      if (potion[i].name === oldName) {
-        potionIndex = i;
-      }
-    }
+//   updatePotionName(oldName, newName) {
+//     let potionIndex = 0;
+//     const potion = this.potions;
+//     for (let i = 0; i < potion.length; i += 1) {
+//       if (potion[i].name === oldName) {
+//         potionIndex = i;
+//       }
+//     }
 
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
 
-    this.potions[potionIndex].name = newName;
-  },
-  // Change code above this line
+//     this.potions[potionIndex].name = newName;
+//   },
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
+
+// console.log(this);
+// ("use strict");
+// console.log(this);
+// let arr = [0, 1, 2, 3, 4];
+// console.log(arr);
+// console.log(Array.isArray(arr));
+const printMessage = function (message) {
+  console.log(message);
 };
-console.log(atTheOldToad.getPotions());
+
+const higherOrderFunction = function (callback) {
+  const string = "HOCs are awesome";
+  callback(string);
+};
+
+higherOrderFunction(printMessage);

@@ -17,6 +17,7 @@
 // import "./js/repeta-3-1.js";
 // import "./js/repeta-3-2-objects.js";
 // import "./js/module-3-1-objects.js";
-import "./js/chat-bot-3-functions.js";
+// import "./js/chat-bot-3-functions.js";
 // import "./js/dop-zanjatie-Sandra-objects.js";
 // import "./js/module-3-2-objects.js";
+import "./js/additional-lesson-2.js";
