@@ -23,4 +23,6 @@
 // import "./js/additional-lesson-2.js";
 // import "./js/repeta-4-1.js";
 // import "./js/module-4-1.js";
-import "./js/chat-bot-4.js";
+// import "./js/chat-bot-4.js";
+// import "./js/module-4-2.js";
+import "./js/repeta-4-2.js";

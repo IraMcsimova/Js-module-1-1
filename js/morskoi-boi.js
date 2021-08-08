@@ -1,6 +1,8 @@
-const location1 = 3;
-const location2 = 4;
-const location3 = 5;
+let randomLoc = Math.floor(Math.random() * 5);
+const location1 = randomLoc;
+
+const location2 = location1 + 1;
+const location3 = location2 + 1;
 let guess;
 let hits = 0;
 let guesses = 0;
@@ -26,7 +28,6 @@ while (isSunk === false) {
     }
   }
 }
-
 const stats = `Для того, щоб збити мій кораблик ти використав  ${guesses} спроби. Це означає твоя точність =${
   3 / guesses
 } (де 1 це найращий результат).`;
