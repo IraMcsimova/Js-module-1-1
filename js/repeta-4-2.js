@@ -252,3 +252,6 @@
 // updateCounter(15, counter.decrement.bind(counter));
 
 //веселый живой пример - нужен в счетчике
+
+let x = typeof NaN;
+console.log(x);
