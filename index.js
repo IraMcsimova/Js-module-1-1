@@ -26,4 +26,9 @@
 // import "./js/chat-bot-4.js";
 // import "./js/module-4-2.js";
 // import "./js/repeta-4-2.js";
-import "./js/module-5-1-func-constr-proto.js";
+// import "./js/module-5-1-func-constr-proto.js";
+// import './js/chat-bot-5.js'
+// import "./js/repeta-5-1.js";
+// import "./js/module-5-2.js";
+// import "./js/js-book.js";
+import "./js/repeta-6-1.js";

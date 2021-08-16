@@ -55,46 +55,46 @@
 //ПРИМЕРЫ==============================================
 //ФУНКЦИИ_КОНСТРУКТОРЫ=================================
 
-function Post(title, text) {
-  this.title = title;
-  this.text = text;
-}
+// function Post(title, text) {
+//   this.title = title;
+//   this.text = text;
+// }
 
-Post.prototype.updateTitle = function (value) {
-  return (this.title = value);
-};
+// Post.prototype.updateTitle = function (value) {
+//   return (this.title = value);
+// };
 
-const post1 = new Post();
-console.log(post1);
+// const post1 = new Post();
+// console.log(post1);
 
-function NewPost(title = `title`, text = `text`, imageUrl) {
-  Post.apply(this, [title, text]);
-  this.image = imageUrl;
-}
+// function NewPost(title = `title`, text = `text`, imageUrl) {
+//   Post.apply(this, [title, text]);
+//   this.image = imageUrl;
+// }
 
-console.log(NewPost.prototype);
-NewPost.prototype = Object.create(Post.prototype);
-NewPost.prototype.constructor = NewPost;
+// console.log(NewPost.prototype);
+// NewPost.prototype = Object.create(Post.prototype);
+// NewPost.prototype.constructor = NewPost;
 
-NewPost.prototype.updateImage = function (url) {
-  return (this.image = url);
-};
+// NewPost.prototype.updateImage = function (url) {
+//   return (this.image = url);
+// };
 
-const newPost = new NewPost(undefined, undefined, `image`);
-// console.log(newPost1);
-/// 3rd  внучатый прототип
+// const newPost = new NewPost(undefined, undefined, `image`);
+// // console.log(newPost1);
+// /// 3rd  внучатый прототип
 
-function BestPost(author, imageUrl, title, text) {
-  NewPost.call(this, imageUrl, title, text);
-  this.author = author;
-}
-BestPost.prototype = Object.create(NewPost.prototype);
-BestPost.prototype.constructor = BestPost;
-BestPost.prototype.showAuthor = function () {
-  console.log(this.author);
-};
-const bestPost1 = new BestPost(`Anatoliy`);
-console.log(bestPost1);
-bestPost1.showAuthor();
-bestPost1.updateImage(`url`);
-bestPost1.updateTitle(`na-na-na`);
+// function BestPost(author, imageUrl, title, text) {
+//   NewPost.call(this, imageUrl, title, text);
+//   this.author = author;
+// }
+// BestPost.prototype = Object.create(NewPost.prototype);
+// BestPost.prototype.constructor = BestPost;
+// BestPost.prototype.showAuthor = function () {
+//   console.log(this.author);
+// };
+// const bestPost1 = new BestPost(`Anatoliy`);
+// console.log(bestPost1);
+// bestPost1.showAuthor();
+// bestPost1.updateImage(`url`);
+// bestPost1.updateTitle(`na-na-na`);
