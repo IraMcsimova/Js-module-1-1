@@ -32,4 +32,5 @@
 // import "./js/module-5-2.js";
 // import "./js/js-book.js";
 // import "./js/repeta-6-1.js";
-import "./js/module-6-1.js";
+// import "./js/module-6-1.js";
+import "./js/repeta-6-2.js";
