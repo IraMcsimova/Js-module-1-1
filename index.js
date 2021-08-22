@@ -33,4 +33,6 @@
 // import "./js/js-book.js";
 // import "./js/repeta-6-1.js";
 // import "./js/module-6-1.js";
-import "./js/repeta-6-2.js";
+// import "./js/repeta-6-2.js";
+// import "./js/module-6-2-practice.js";
+import "./js/chat-bot-6.js";
